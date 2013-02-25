@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using ProtoBuf.Data;
@@ -45,6 +46,10 @@ namespace ProtobufFileViewer
 				MessageBox.Show(String.Format("Unable to load file {0}. {1}", fileName, ex.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return null;
 			}
+		}
+
+		private void mainDataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
+		{
 		}
 	}
 }

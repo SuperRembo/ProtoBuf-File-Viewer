@@ -47,6 +47,7 @@
 			this.mainDataGridView.ReadOnly = true;
 			this.mainDataGridView.Size = new System.Drawing.Size(676, 377);
 			this.mainDataGridView.TabIndex = 1;
+			this.mainDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.mainDataGridView_DataError);
 			// 
 			// menuStrip1
 			// 
